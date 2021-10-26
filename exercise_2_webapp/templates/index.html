@@ -1,12 +1,17 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title> Best Games </title>
-  </head>
-  <body>
-      <p1>{% for game in games%}
-        <p1>{{game.name}}</p1>
-        {% endfor %}
-  </body>
-  <h1>Hello<h1>
+<head>
+  <title>Games</title>
+</head>
+<body>
+  <h1>The Best Games</h1>
+  {% for game in games %}
+    <h3>
+      <a href="">
+        {{game.name}}
+      </a>
+    </h3>
+    <h6>Released in {{game.year}}</h6>
+  {% endfor %}
+</body>
 </html>
